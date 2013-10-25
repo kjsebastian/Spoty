@@ -1,0 +1,105 @@
+<style>
+  .full {
+    height: 8%;
+  }
+  .full-parent {
+    height: 100%;
+  }
+  .topcoat-button-bar__button--large {
+    border-radius: inherit;
+    width: 98px;
+    height: 50px;
+  }
+  select.dropdown {
+    background: #595B5B;
+    box-shadow: 0 0 0 1px #303233;
+    border: none;
+    border-top: 2px solid #666767;
+    color: #FFF;
+    text-shadow: 0 -1px 0 #000;
+    padding: 3px 20px 4px 8px;
+    -webkit-appearance: none;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    width: 70%;
+  }
+</style>
+<div class="topcoat-tab-bar full">
+   <label class="topcoat-tab-bar__item">
+     <input type="radio" name="topcoat">
+     <button class="topcoat-button-bar__button full full-parent" ng-click="slidePage('/')">Favorite Spots</button>
+   </label>
+   <label class="topcoat-tab-bar__item">
+     <input type="radio" name="topcoat">
+     <button class="topcoat-button-bar__button full full-parent" ng-click="slidePage('/view1')">Search Here</button>
+   </label>
+   <label class="topcoat-tab-bar__item">
+     <input type="radio" name="topcoat">
+     <button class="topcoat-button-bar__button full full-parent" ng-click="slidePage('/view2')">Specify Location</button>
+   </label>
+   <label class="topcoat-tab-bar__item">
+     <input type="radio" name="topcoat">
+     <button class="topcoat-button-bar__button full full-parent" ng-click="slidePage('/view3')">FAQ</button>
+   </label>
+</div>
+
+<link rel="stylesheet" type="text/css" href="css/topcoat-mobile-dark.min.css">
+
+<div class="topcoat-list__container list">
+    <h3 class="topcoat-list__header">Specify Location</h3>
+    <ul class="topcoat-list">
+        <li class="topcoat-list__item--first">
+            <label class="topcoat-radio-button__label">
+                School:
+                <select class="dropdown">
+                  <option value="SIS">School of Information Systems</option>
+
+                  <option value="SOE">School of Economics/Social Sciences</option>
+
+                  <option value="SOB">Lee Kong Chian School of Business</option>
+
+                  <option value="SOA">School of Accountancy/Law</option>
+
+                  <option value="Library">Li Ka Shing Library</option>
+                </select>
+            </label>
+        </li>
+        <li class="topcoat-list__item--first">
+            <label class="topcoat-radio-button__label">
+                Level: &nbsp;&nbsp;&nbsp;
+                <select class="dropdown">
+                  <option value="1">1</option>
+
+                  <option value="2">2</option>
+
+                  <option value="3">3</option>
+
+                  <option value="4">4</option>
+
+                  <option value="5">5</option>
+                </select>
+            </label>
+        </li>
+        <li class="topcoat-list__item--first">
+            <strong>Purpose:</strong> <br><br
+            <label class="topcoat-radio-button">
+                <input type="radio" name="topcoat">
+                <div class="topcoat-radio-button__checkmark">
+                </div>
+                Individual
+            </label><br/>
+            <label class="topcoat-radio-button">
+                <input type="radio" name="topcoat">
+                <div class="topcoat-radio-button__checkmark">
+                </div>
+                Group
+            </label><br/>
+            <input type="text" class="topcoat-text-input">
+        </li>
+        <li class="topcoat-list__item--first">
+            <button class="topcoat-button" style="width: 100%;" ng-click="slidePage('/view4')">Go</button>
+        </li>
+    </ul>
+</div>
+

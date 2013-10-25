@@ -1,0 +1,54 @@
+<style>
+  .full {
+    height: 8%;
+  }
+  .full-parent {
+    height: 100%;
+  }
+</style>
+<div class="topcoat-tab-bar full">
+   <label class="topcoat-tab-bar__item">
+     <input type="radio" name="topcoat">
+     <button class="topcoat-button-bar__button full full-parent" ng-click="slidePage('/')">Favorite Spots</button>
+   </label>
+   <label class="topcoat-tab-bar__item">
+     <input type="radio" name="topcoat">
+     <button class="topcoat-button-bar__button full full-parent" ng-click="slidePage('/view1')">Search Here</button>
+   </label>
+   <label class="topcoat-tab-bar__item">
+     <input type="radio" name="topcoat">
+     <button class="topcoat-button-bar__button full full-parent" ng-click="slidePage('/view2')">Specify Location</button>
+   </label>
+   <label class="topcoat-tab-bar__item">
+     <input type="radio" name="topcoat">
+     <button class="topcoat-button-bar__button full full-parent" ng-click="slidePage('/view3')">FAQ</button>
+   </label>
+</div>
+
+<style type="text/css">
+.topcoat-button-bar__button--large {
+  border-radius: inherit;
+  width: 98px;
+  height: 50px;
+}
+.notexttransform {
+  text-transform: none;
+}
+.topcoat-search-input {
+  color: "#000";
+}
+</style>
+
+<div class="topcoat-list__container list">
+  <h3 class="topcoat-list__header">FAQ</h3>
+  <input type="search" ng-model="searchString" placeholder="Search" class="topcoat-search-input" style="width: 95%;" />
+  <ul class="topcoat-list">
+    <li class="topcoat-list__item--first notexttransform" ng-click="slidePage('/view8')" ng-repeat="i in items | searchFor:searchString">
+      <p style="color:yellow;"><strong>{{i.question}}</strong></p>
+      <br>
+      {{i.answer}}
+      <br><br>
+      </li>
+  </ul>
+</div>
+

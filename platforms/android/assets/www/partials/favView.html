@@ -1,0 +1,106 @@
+<style>
+  .full {
+    height: 8%;
+  }
+  .full-parent {
+    height: 100%;
+  }
+</style>
+<div class="topcoat-tab-bar full">
+   <label class="topcoat-tab-bar__item">
+     <input type="radio" name="topcoat">
+     <button class="topcoat-button-bar__button full full-parent" ng-click="slidePage('/')">Favorite Spots</button>
+   </label>
+   <label class="topcoat-tab-bar__item">
+     <input type="radio" name="topcoat">
+     <button class="topcoat-button-bar__button full full-parent" ng-click="slidePage('/view1')">Search Here</button>
+   </label>
+   <label class="topcoat-tab-bar__item">
+     <input type="radio" name="topcoat">
+     <button class="topcoat-button-bar__button full full-parent" ng-click="slidePage('/view2')">Specify Location</button>
+   </label>
+   <label class="topcoat-tab-bar__item">
+     <input type="radio" name="topcoat">
+     <button class="topcoat-button-bar__button full full-parent" ng-click="slidePage('/view3')">FAQ</button>
+   </label>
+</div>
+
+<style type="text/css">
+.topcoat-button-bar__button--large {
+  border-radius: inherit;
+  width: 98px;
+  height: 50px;
+}
+.circle-green {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background: green;
+  display: inline-block;
+}
+.circle-red {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background: red;
+  display: inline-block;
+}
+</style>
+
+<div class="topcoat-list__container list">
+    <h3 class="topcoat-list__header">Favorite Spots</h3>
+    <ul class="topcoat-list">
+        <li class="topcoat-list__item--first">
+            SIS Opposite GSR 2.2
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="circle-green"></div>
+        </li>
+        <li class="topcoat-list__item">
+            Library Level 4
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="circle-green"></div>
+        </li>
+        <li class="topcoat-list__item">
+            SOE Next to GSR 2.7
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;
+            <div class="circle-red"></div>
+        </li>
+        <li class="topcoat-list__item">
+            SIS Level 3 Bench 1
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;
+            <div class="circle-green"></div>
+        </li>
+        <li class="topcoat-list__item">
+            SIS Level 5 Couch
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="circle-red"></div>
+        </li>
+        <li class="topcoat-list__item">
+            SIS Kitchen Table 1
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;
+            <div class="circle-red"></div>
+        </li>
+        <li class="topcoat-list__item">
+            SOE Secret Spot
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="circle-green"></div>        </li>
+        <li class="topcoat-list__item">
+            Library Level 2 Couch
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;
+            <div class="circle-green"></div>        </li>
+    </ul>
+</div>

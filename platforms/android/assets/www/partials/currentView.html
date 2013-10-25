@@ -1,0 +1,61 @@
+<style>
+  .full {
+    height: 8%;
+  }
+  .full-parent {
+    height: 100%;
+  }
+</style>
+<div class="topcoat-tab-bar full">
+   <label class="topcoat-tab-bar__item">
+     <input type="radio" name="topcoat">
+     <button class="topcoat-button-bar__button full full-parent" ng-click="slidePage('/')">Favorite Spots</button>
+   </label>
+   <label class="topcoat-tab-bar__item">
+     <input type="radio" name="topcoat">
+     <button class="topcoat-button-bar__button full full-parent" ng-click="slidePage('/view1')">Search Here</button>
+   </label>
+   <label class="topcoat-tab-bar__item">
+     <input type="radio" name="topcoat">
+     <button class="topcoat-button-bar__button full full-parent" ng-click="slidePage('/view2')">Specify Location</button>
+   </label>
+   <label class="topcoat-tab-bar__item">
+     <input type="radio" name="topcoat">
+     <button class="topcoat-button-bar__button full full-parent" ng-click="slidePage('/view3')">FAQ</button>
+   </label>
+</div>
+
+<style type="text/css">
+.topcoat-button-bar__button--large {
+  border-radius: inherit;
+  width: 98px;
+  height: 50px;
+}
+</style>
+
+<div class="topcoat-list">
+  <h3 class="topcoat-list__header">Current Location</h3>
+  <ul class="topcoat-list__container">
+    <li class="topcoat-list__item">
+      Current Location: <strong>SOE Level 2</strong>
+    </li>
+    <li class="topcoat-list__item">
+      <img src="img/map.jpg" width="100%" height="50%">
+    </li>
+    <li class="topcoat-list__item">
+      <button class="topcoat-button" style="width: 100%;" onClick="alertNotify(); return false;">Refresh</button>
+    </li>
+  </ul>
+</div>
+
+<script type="text/javascript">
+    document.addEventListener("deviceready", onDeviceReady, false);
+
+    function onDeviceReady() {
+
+    }
+
+    function alertNotify() {
+        navigator.notification.confirm("Location Service",function() {},"Your location service is not turned on!",["Settings", "Close"]);
+    }
+</script>

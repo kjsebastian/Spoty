@@ -1,0 +1,55 @@
+<style>
+  .full {
+    height: 8%;
+  }
+  .full-parent {
+    height: 100%;
+  }
+</style>
+<div class="topcoat-tab-bar full">
+   <label class="topcoat-tab-bar__item">
+     <input type="radio" name="topcoat">
+     <button class="topcoat-button-bar__button full full-parent" ng-click="slidePage('/')">Favorite Spots</button>
+   </label>
+   <label class="topcoat-tab-bar__item">
+     <input type="radio" name="topcoat">
+     <button class="topcoat-button-bar__button full full-parent" ng-click="slidePage('/view1')">Search Here</button>
+   </label>
+   <label class="topcoat-tab-bar__item">
+     <input type="radio" name="topcoat">
+     <button class="topcoat-button-bar__button full full-parent" ng-click="slidePage('/view2')">Specify Location</button>
+   </label>
+   <label class="topcoat-tab-bar__item">
+     <input type="radio" name="topcoat">
+     <button class="topcoat-button-bar__button full full-parent" ng-click="slidePage('/view3')">FAQ</button>
+   </label>
+</div>
+
+<style type="text/css">
+.topcoat-button-bar__button--large {
+  border-radius: inherit;
+  width: 98px;
+  height: 50px;
+}
+</style>
+
+<div class="topcoat-list__container list">
+    <h3 class="topcoat-list__header">Available Spots</h3>
+    <ul class="topcoat-list">
+        <li class="topcoat-list__item--first" ng-click="slidePage('/view8')">
+            SOE Level-2 Spot 1
+        </li>
+        <li class="topcoat-list__item" ng-click="expression">
+            SOE Level-2 Spot 2
+        </li>
+        <li class="topcoat-list__item" ng-click="slidePage('/view2')">
+            SOE Level-2 Spot 3
+        </li>
+        <li class="topcoat-list__item" ng-click="slidePage('/view2')">
+            SOE Level-2 Spot 4
+        </li>
+        <li class="topcoat-list__item" ng-click="slidePage('/view3')">
+            <img src="img/map.jpg" width="100%" height="50%">
+        </li>
+    </ul>
+</div>
