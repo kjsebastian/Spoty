@@ -24,6 +24,7 @@
 /home/kj/projects/spoty/platforms/android/assets/www/cordova.js \
 /home/kj/projects/spoty/platforms/android/assets/www/css \
 /home/kj/projects/spoty/platforms/android/assets/www/font \
+/home/kj/projects/spoty/platforms/android/assets/www/plugins \
 /home/kj/projects/spoty/platforms/android/assets/www/spec \
 /home/kj/projects/spoty/platforms/android/assets/www/spec.html \
 /home/kj/projects/spoty/platforms/android/assets/www/partials/faqView.html \
@@ -43,6 +44,11 @@
 /home/kj/projects/spoty/platforms/android/assets/www/js/app.js \
 /home/kj/projects/spoty/platforms/android/assets/www/js/controllers.js \
 /home/kj/projects/spoty/platforms/android/assets/www/js/index.js \
+/home/kj/projects/spoty/platforms/android/assets/www/img/map-refresh.jpg \
+/home/kj/projects/spoty/platforms/android/assets/www/img/FavIcon.png \
+/home/kj/projects/spoty/platforms/android/assets/www/img/faq.png \
+/home/kj/projects/spoty/platforms/android/assets/www/img/specifyLocation.png \
+/home/kj/projects/spoty/platforms/android/assets/www/img/search.png \
 /home/kj/projects/spoty/platforms/android/assets/www/img/map.jpg \
 /home/kj/projects/spoty/platforms/android/assets/www/img/logo.png \
 /home/kj/projects/spoty/platforms/android/assets/www/res/icon \
@@ -110,6 +116,7 @@
 /home/kj/projects/spoty/platforms/android/assets/www/css/topcoat-mobile-light.css \
 /home/kj/projects/spoty/platforms/android/assets/www/css/topcoat-mobile-light.min.css \
 /home/kj/projects/spoty/platforms/android/assets/www/css/topcoat-mobile-dark.min.css \
+/home/kj/projects/spoty/platforms/android/assets/www/css/topcoat-desktop-light.css \
 /home/kj/projects/spoty/platforms/android/assets/www/css/mobile-nav.css \
 /home/kj/projects/spoty/platforms/android/assets/www/css/index.css \
 /home/kj/projects/spoty/platforms/android/assets/www/css/topcoat-desktop-dark.css \
@@ -133,6 +140,11 @@
 /home/kj/projects/spoty/platforms/android/assets/www/font/SourceSansPro-LightIt.otf \
 /home/kj/projects/spoty/platforms/android/assets/www/font/SourceSansPro-Regular.otf \
 /home/kj/projects/spoty/platforms/android/assets/www/font/SourceCodePro-Black.otf \
+/home/kj/projects/spoty/platforms/android/assets/www/plugins/org.apache.cordova.dialogs \
+/home/kj/projects/spoty/platforms/android/assets/www/plugins/org.apache.cordova.dialogs/www \
+/home/kj/projects/spoty/platforms/android/assets/www/plugins/org.apache.cordova.dialogs/www/android \
+/home/kj/projects/spoty/platforms/android/assets/www/plugins/org.apache.cordova.dialogs/www/notification.js \
+/home/kj/projects/spoty/platforms/android/assets/www/plugins/org.apache.cordova.dialogs/www/android/notification.js \
 /home/kj/projects/spoty/platforms/android/assets/www/spec/lib \
 /home/kj/projects/spoty/platforms/android/assets/www/spec/helper.js \
 /home/kj/projects/spoty/platforms/android/assets/www/spec/index.js \

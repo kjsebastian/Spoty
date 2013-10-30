@@ -6,22 +6,22 @@
     height: 100%;
   }
 </style>
-<div class="topcoat-tab-bar full">
-   <label class="topcoat-tab-bar__item">
+<div class="topcoat-button-bar full">
+   <label class="topcoat-button-bar__item">
      <input type="radio" name="topcoat">
-     <button class="topcoat-button-bar__button full full-parent" ng-click="slidePage('/')">Favorite Spots</button>
+     <button class="topcoat-button-bar__button full full-parent" ng-click="slidePage('/')"><img class="icon" src="img/FavIcon.png"><br>Favorite Spots</button>
    </label>
-   <label class="topcoat-tab-bar__item">
+   <label class="topcoat-button-bar__item">
      <input type="radio" name="topcoat">
-     <button class="topcoat-button-bar__button full full-parent" ng-click="slidePage('/view1')">Search Here</button>
+     <button class="topcoat-button-bar__button full full-parent" ng-click="slidePage('/view1')"><img class="icon" src="img/search.png"><br>Search Here</button>
    </label>
-   <label class="topcoat-tab-bar__item">
+   <label class="topcoat-button-bar__item">
      <input type="radio" name="topcoat">
-     <button class="topcoat-button-bar__button full full-parent" ng-click="slidePage('/view2')">Specify Location</button>
+     <button class="topcoat-button-bar__button full full-parent" ng-click="slidePage('/view2')"><img class="icon" src="img/specifyLocation.png"><br>Specify Location</button>
    </label>
-   <label class="topcoat-tab-bar__item">
+   <label class="topcoat-button-bar__item">
      <input type="radio" name="topcoat">
-     <button class="topcoat-button-bar__button full full-parent" ng-click="slidePage('/view3')">FAQ</button>
+     <button class="topcoat-button-bar__button full full-parent" ng-click="slidePage('/view3')"><img class="icon" src="img/faq.png"><br>FAQ</button>
    </label>
 </div>
 
@@ -36,19 +36,23 @@
 <div class="topcoat-list__container list">
     <h3 class="topcoat-list__header">Available Spots</h3>
     <ul class="topcoat-list">
-        <li class="topcoat-list__item--first" ng-click="slidePage('/view8')">
+        <li class="topcoat-list__item--first">
             SOE Level-2 Spot 1
+            <button class="topcoat-button-bar__button" style="float: right;" ng-click="slidePage('/')">Add to favorites</button>
         </li>
-        <li class="topcoat-list__item" ng-click="expression">
+        <li class="topcoat-list__item">
             SOE Level-2 Spot 2
+            <button class="topcoat-button-bar__button" style="float: right;" ng-click="slidePage('/')">Add to favorites</button>
         </li>
-        <li class="topcoat-list__item" ng-click="slidePage('/view2')">
+        <li class="topcoat-list__item">
             SOE Level-2 Spot 3
+            <button class="topcoat-button-bar__button" style="float: right;" ng-click="slidePage('/')">Add to favorites</button>
         </li>
-        <li class="topcoat-list__item" ng-click="slidePage('/view2')">
+        <li class="topcoat-list__item">
             SOE Level-2 Spot 4
+            <button class="topcoat-button-bar__button" style="float: right;" ng-click="slidePage('/')">Add to favorites</button>
         </li>
-        <li class="topcoat-list__item" ng-click="slidePage('/view3')">
+        <li class="topcoat-list__item">
             <img src="img/map.jpg" width="100%" height="50%">
         </li>
     </ul>
